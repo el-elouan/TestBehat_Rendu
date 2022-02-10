@@ -1,0 +1,256 @@
+{
+  "id": "efe24306-4345-4ce8-a280-ec4d469c8bfa",
+  "version": "2.0",
+  "name": "AjoutLivre",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "683e4285-224c-4da7-801a-eb84bbe0cdb8",
+    "name": "AjoutdeLivre",
+    "commands": [{
+      "id": "974722b9-ad6c-4184-9791-835f504dc406",
+      "comment": "",
+      "command": "open",
+      "target": "/testBehat/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ef55f9e-f33f-4e59-9db2-c0da1d61b966",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b9abb8e9-e2da-4cc0-8645-d7b1541c9605",
+      "comment": "",
+      "command": "click",
+      "target": "id=login",
+      "targets": [
+        ["id=login", "id"],
+        ["name=log", "name"],
+        ["css=#login", "css:finder"],
+        ["xpath=//input[@id='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "db42892a-8281-47e2-9e3c-9a07bac54389",
+      "comment": "",
+      "command": "type",
+      "target": "id=login",
+      "targets": [
+        ["id=login", "id"],
+        ["name=log", "name"],
+        ["css=#login", "css:finder"],
+        ["xpath=//input[@id='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "jvaljean"
+    }, {
+      "id": "1cc035a1-83bb-47dd-800a-b95fc5153620",
+      "comment": "",
+      "command": "click",
+      "target": "id=password-input",
+      "targets": [
+        ["id=password-input", "id"],
+        ["name=pwd", "name"],
+        ["css=#password-input", "css:finder"],
+        ["xpath=//input[@id='password-input']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f70e3b7-6200-4d09-93e9-58e2e69c8e14",
+      "comment": "",
+      "command": "type",
+      "target": "id=password-input",
+      "targets": [
+        ["id=password-input", "id"],
+        ["name=pwd", "name"],
+        ["css=#password-input", "css:finder"],
+        ["xpath=//input[@id='password-input']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "cosette"
+    }, {
+      "id": "33fe2376-8485-4aab-a599-971ddb3ee662",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=password-input",
+      "targets": [
+        ["id=password-input", "id"],
+        ["name=pwd", "name"],
+        ["css=#password-input", "css:finder"],
+        ["xpath=//input[@id='password-input']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "48f7b7ce-d0ee-46be-ba52-15451161a444",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-toggle",
+      "targets": [
+        ["css=.navbar-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'MENU')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1240ed06-0553-475a-b714-b41a3443f01a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Ajouter un livre",
+      "targets": [
+        ["linkText=Ajouter un livre", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Ajouter un livre')]", "xpath:link"],
+        ["xpath=//div[@id='myNavbar']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'index.php?action=ajoutLivre&id=95803957962046e89676d92.45969103')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ajouter un livre')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "37e54ccb-8a5b-414a-a4ef-8600b460c13d",
+      "comment": "",
+      "command": "click",
+      "target": "id=nom",
+      "targets": [
+        ["id=nom", "id"],
+        ["name=nom", "name"],
+        ["css=#nom", "css:finder"],
+        ["xpath=//input[@id='nom']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5b8b80f-a265-479f-8622-a8fdca6c7162",
+      "comment": "",
+      "command": "type",
+      "target": "id=nom",
+      "targets": [
+        ["id=nom", "id"],
+        ["name=nom", "name"],
+        ["css=#nom", "css:finder"],
+        ["xpath=//input[@id='nom']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Le TITRE"
+    }, {
+      "id": "bde98c73-f28a-46f6-90e9-e08dd01ac021",
+      "comment": "",
+      "command": "click",
+      "target": "id=auteur",
+      "targets": [
+        ["id=auteur", "id"],
+        ["name=auteur", "name"],
+        ["css=#auteur", "css:finder"],
+        ["xpath=//input[@id='auteur']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d24bf20-119b-493c-acff-9951499793ed",
+      "comment": "",
+      "command": "type",
+      "target": "id=auteur",
+      "targets": [
+        ["id=auteur", "id"],
+        ["name=auteur", "name"],
+        ["css=#auteur", "css:finder"],
+        ["xpath=//input[@id='auteur']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Thomas Monclert"
+    }, {
+      "id": "0a03ec75-02c0-4d6d-bbae-bdb5bc2094b6",
+      "comment": "",
+      "command": "click",
+      "target": "id=edition",
+      "targets": [
+        ["id=edition", "id"],
+        ["name=edition", "name"],
+        ["css=#edition", "css:finder"],
+        ["xpath=//input[@id='edition']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d081e6d6-c0c1-4e38-8386-b8da41b10f46",
+      "comment": "",
+      "command": "type",
+      "target": "id=edition",
+      "targets": [
+        ["id=edition", "id"],
+        ["name=edition", "name"],
+        ["css=#edition", "css:finder"],
+        ["xpath=//input[@id='edition']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Gaumont Livre"
+    }, {
+      "id": "b4de536f-c3bf-4179-ae60-cfb31bf100d6",
+      "comment": "",
+      "command": "click",
+      "target": "id=info",
+      "targets": [
+        ["id=info", "id"],
+        ["name=info", "name"],
+        ["css=#info", "css:finder"],
+        ["xpath=//input[@id='info']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f90aa33c-5647-4f69-9368-2e2be57fd523",
+      "comment": "",
+      "command": "click",
+      "target": "id=info",
+      "targets": [
+        ["id=info", "id"],
+        ["name=info", "name"],
+        ["css=#info", "css:finder"],
+        ["xpath=//input[@id='info']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04b1a760-5e4e-47b2-b5f4-233e313f701d",
+      "comment": "",
+      "command": "type",
+      "target": "id=info",
+      "targets": [
+        ["id=info", "id"],
+        ["name=info", "name"],
+        ["css=#info", "css:finder"],
+        ["xpath=//input[@id='info']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "Infos non communiquees"
+    }, {
+      "id": "5e2c74c8-55e6-4c89-91be-b4e6f5298b10",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ajouter')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "da70581d-eeb7-4d48-9a50-d3e1a22b70a2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["683e4285-224c-4da7-801a-eb84bbe0cdb8"]
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}
