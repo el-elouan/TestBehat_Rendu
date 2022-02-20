@@ -76,6 +76,7 @@ $this->driver->quit();
 public function iAmOnTheAddLivrePage()
 {
 $this->driver->get('http://localhost/TestSelenium/index.php?action=ajoutLivre');
+}
 /**
 * @Given /I add "(?P<nom>[^"]*)" as nom and "(?P<auteur>[^"]*)" as auteur and "(?P<edition>[^"]*)" as edition and "(?P<information>[^"]*)" as information/
 */
