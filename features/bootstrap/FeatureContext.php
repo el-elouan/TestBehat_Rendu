@@ -69,4 +69,46 @@ $this->driver->findElement(WebDriverBy::linkText("Les tests unitaires (PHPUNIT)"
 // Make sure to always call quit() at the end to terminate the browser session
 $this->driver->quit();
 }
+
+/**
+* @Given I am on the addLivre page
+*/
+public function iAmOnTheAddLivrePage()
+{
+$this->driver->get('http://localhost/TestSelenium/index.php?action=ajoutLivre');
+/**
+* @Given /I add "(?P<nom>[^"]*)" as nom and "(?P<auteur>[^"]*)" as auteur and "(?P<edition>[^"]*)" as edition and "(?P<information>[^"]*)" as information/
+*/
+public function iAddTheLivre($nom,$auteur,$edition,$information)
+{
+$this->driver->findElement(WebDriverBy::id('nom'))
+->sendKeys($nom);
+$this->driver->findElement(WebDriverBy::id('auteur'))
+->sendKeys($auteur);
+$this->driver->findElement(WebDriverBy::id('edition'))
+->sendKeys($edition);
+$this->driver->findElement(WebDriverBy::id('info'))
+->sendKeys($info);
+}
+/**
+* @When I submit the form
+*/
+public function iSubmitTheForm()
+{
+$this->driver->findElement(WebDriverBy::id('valider'))
+->submit();
+}
+/**
+* @Then I should see addLivre
+*/
+public function iShouldSeeAddLivre()
+{
+//wait to load the web page
+$this->driver->wait(10, 1000)->until(WebDriverExpectedCondition::presenceOfElementLocated(WebDriverBy::linktext("Ajax")));
+// Find link Les tests unitaires (PHPUNIT) element of 'Accueil' page
+$this->driver->findElement(WebDriverBy::cssSelector(".verif_form_livre"));
+// Make sure to always call quit() at the end to terminate the browser session
+$this->driver->quit();
+}
+
 }
